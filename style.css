@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+  .nav--img {
+    width: 100%;
+  }
+  
+  .nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 600ms;
+    /* margin-bottom: 5rem; */
+    z-index: 500;
+}
+
+.main {
+  position: relative;
+  top: 7rem;
+}
+
+.section {
+  padding: 2rem 15rem;
+}
+
+.apply-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  color: rgb(171, 6, 6);
+  margin-bottom: 3.2rem;
+}
+
+.a-n-v {
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+}
+
+.h-one {
+  font-size: 4rem;
+}
+
+.h-two {
+  font-size: 2rem;
+  color: rgb(171, 6, 6);
+  margin: 2rem 0;
+}
+
+.welcome-note {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.apply {
+  max-width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  /* border: .1rem solid red; */
+}
+
+.p {
+  font-size: 2.2rem;
+  color: rgb(171, 6, 6);
+  margin-bottom: 2rem;
+}
+
+
+.name, .email, .docs, .file {
+  max-width: 50rem;
+  margin-top: 1.2rem;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+select  {
+  padding: .4rem;
+}
+
+.name input, .email input {
+  border: .1rem solid #bdbdbd;
+}
+
+input{
+  padding: .3rem 4rem .3rem .2rem;
+  border-radius: .2rem;
+  
+}
+
+label {
+  display: flex;
+  width: 10rem;
+  font-size: 1.6rem;
+  /* margin-right: 1rem; */
+  /* margin-right: 2rem; */
+}
+
+select:focus {
+  outline: none;
+}
+
+.scum {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  /* padding: 1rem 2rem ;
+  border-radius: .3rem;
+  border: none;
+  box-shadow: ; */
+}
+
+/* Apply box shadow to the submit button */
+.btn {
+  width: 200px; /* Adjust the width according to your design */
+  padding: 10px;
+  background-color: #d92a2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+  transition: all 600ms;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Hover effect for the submit button */
+.btn:hover {
+  background-color: #dde6dd;
+  color: #d92a2a;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+input:focus {
+  outline: none;
+}
+.ftr-section {
+  /* background-color: #efeded; */
+  
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spn-nth {
+ height: 4rem;
+ background-color: #363636;
+}
+
+.js {
+  position: relative;
+  top: 20rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Pixelify Sans', cursive;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 75em) {
+  .nav--img {
+    max-width: 120rem;
+  }
+}
+
+@media(max-width:58em) {
+  .nav--img {
+    width: 100%;
+  }
+
+  .h-one {
+    font-size: 2.8rem;
+  }
+
+  .h-two {
+    font-size: 1.8rem;
+  }
+
+  .welcome-note {
+    font-size: 1.4rem;
+  }
+
+  .spn-nth {
+    margin: 0 2rem;
+  }
+
+  .pp {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+
+@media(max-width:38.2em) {
+
+  .section {
+    padding: 3.2rem 10rem;
+  }
+  .nav--img {
+    width: 100%;
+  }
+
+  .h-one {
+    font-size: 2rem;
+  }
+
+  .h-two {
+    font-size: 1.6rem;
+  }
+
+  .welcome-note {
+    font-size: 1.2rem;
+  }
+
+  .apply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .name, .email, .docs, .file {
+    max-width: 30rem;
+
+  } */
+
+  .p {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    margin-bottom: 1.8rem;
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 31.5em) {
+  .section {
+    padding: 3.2rem 5rem;
+  }
+  .nav--img {
+    width: 100%;
+  }
+
+  form, .application-pt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .docs, .file {
+    /* max-width: 50rem; */
+    margin-left: 9rem;
+    
+  }
+
+  .name, .email, .docs, .file {
+   margin-top: 2rem;
+  }
+
+  select {
+    z-index: 200;
+  }
+}
+
+@media(max-width:29.4em) {
+
+  .section {
+    padding: 3.2rem ;
+  }
+  .nav--img {
+    width: 100%;
+  }
+
+  .pp{
+    font-size: .8rem;
+  }
+}
+@media(max-width:25.4em) {
+  .nav--img {
+    width: 100%;
+  }
+}
+@media(max-width:25) {
+  .nav--img {
+    width: 100%;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .main {
+    align-self: self-end;
+  }
+}
+
+@media(max-width:19em) {
+  .form {
+    margin-left: 8rem;
+  }
+
+  #country{
+    width: 15rem;
+    margin-left: 4rem;
+  }
+
+  input{
+    padding: .3rem 1rem .3rem .2rem;
+    border-radius: .2rem;
+    
+  }
+
+  label {
+    width: 7rem;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    width: 10rem;
+  }
+
+  select:focus#country {
+    width:auto\9;
+}
+  
+}
